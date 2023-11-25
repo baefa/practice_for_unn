@@ -10,8 +10,9 @@ namespace fadeev_prac.DBContext
         /// Конструктор DbContext
         /// </summary>
         /// <param name="options">Свойства контекста</param>
-        public DBContext() : base("name=")
+        public DBContext() : base("name=fadeev_pracConnectionString")
         {
+            
         }
         
         /** Производители */
@@ -28,9 +29,5 @@ namespace fadeev_prac.DBContext
         
         /** Склады */
         public System.Data.Entity.DbSet<Warehouse> Warehouses { get; set; }
-        
-        /// <summary>
-        /// Настройка свойств модели
-        /// </summary>
     }
 }
