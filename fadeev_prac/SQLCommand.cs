@@ -5,7 +5,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
-using fadeev_prac.modelDB;
 using System.Data;
 
 namespace fadeev_prac
@@ -13,7 +12,6 @@ namespace fadeev_prac
     public class SQLCommand
     {
         static string connectionString = @"Data Source=CLS-RDS01\SQLEXPRESS;Initial Catalog=fadeev_prac;Integrated Security=True";
-
         static SqlConnection SqlConnect()
         {
            SqlConnection sqlConnection = new SqlConnection(connectionString);
